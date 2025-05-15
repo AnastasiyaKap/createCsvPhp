@@ -1,1 +1,19 @@
 
+{
+  "name": "PHP Workspace",
+  "build" : {
+    "dockerfile" : "Dockerfile"
+  },
+  "settings":{ "terminal.integrates.defaultProfile.linux":
+    "bash" 
+  },
+  "postCreateCommand": "composer install",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "bmewburn.vscode-intelephense-client"
+      ] 
+    }
+  }
+  
+}
